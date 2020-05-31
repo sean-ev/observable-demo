@@ -8,7 +8,9 @@ export function HomePage() {
         <title>Home Page</title>
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
-      <span>HomePage container</span>
+      <span>
+        <a href="./bar-charts">Bar Charts</a>
+      </span>
     </>
   );
 }

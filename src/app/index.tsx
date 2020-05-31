@@ -13,6 +13,8 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import { GlobalStyle } from 'styles/global-styles';
 
 import { HomePage } from './containers/HomePage/Loadable';
+import { HelloWorld } from './containers/HelloWorld';
+import { BarCharts } from './containers/BarCharts';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 
 export function App() {
@@ -27,6 +29,8 @@ export function App() {
 
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/hello-world" component={HelloWorld} />
+        <Route exact path="/bar-charts" component={BarCharts} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
