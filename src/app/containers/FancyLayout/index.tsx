@@ -15,7 +15,7 @@ export function FancyLayout(props: Props) {
     <GridLayout
       className="layout"
       layout={layout}
-      cols={4}
+      cols={6}
       rowHeight={300}
       width={1200}
     >
