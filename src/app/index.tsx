@@ -16,6 +16,9 @@ import { HomePage } from './containers/HomePage/Loadable';
 import { HelloWorld } from './containers/HelloWorld';
 import { BarCharts } from './containers/BarCharts';
 import { FancyLayout } from './containers/FancyLayout';
+import { ThreeDee } from './containers/ThreeDee';
+import { GpuBoids } from './containers/GpuBoids';
+import { MapBox } from './containers/MapBox';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 
 export function App() {
@@ -33,6 +36,9 @@ export function App() {
         <Route exact path="/hello-world" component={HelloWorld} />
         <Route exact path="/bar-charts" component={BarCharts} />
         <Route exact path="/fancy-layout" component={FancyLayout} />
+        <Route exact path="/three-dee" component={ThreeDee} />
+        <Route exact path="/gpu-boids" component={GpuBoids} />
+        <Route exact path="/mapbox-video" component={MapBox} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

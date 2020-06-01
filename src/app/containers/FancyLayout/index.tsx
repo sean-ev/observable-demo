@@ -10,6 +10,7 @@ export function FancyLayout(props: Props) {
     { i: 'a', x: 0, y: 0, w: 1, h: 1 },
     { i: 'b', x: 1, y: 0, w: 3, h: 1 },
     { i: 'c', x: 0, y: 1, w: 4, h: 1 },
+    { i: 'd', x: 0, y: 2, w: 4, h: 1 },
   ];
   return (
     <GridLayout
@@ -30,6 +31,9 @@ export function FancyLayout(props: Props) {
           notebookId="@sean-ev/introduction-to-generators"
           cellName="visual"
         />
+      </Div>
+      <Div key="d">
+        <Notebook notebookId="d/d4de73cb2aac0ea4" cellName="visual" />
       </Div>
     </GridLayout>
   );

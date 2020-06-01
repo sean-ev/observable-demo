@@ -1,4 +1,5 @@
 import { BarChartsState } from 'app/containers/BarCharts/types';
+import { MapBoxState } from 'app/containers/MapBox/types';
 // [IMPORT NEW CONTAINERSTATE ABOVE] < Needed for generating containers seamlessly
 
 /* 
@@ -7,5 +8,6 @@ import { BarChartsState } from 'app/containers/BarCharts/types';
 */
 export interface RootState {
   barCharts?: BarChartsState;
+  mapBox?: MapBoxState;
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly
 }
