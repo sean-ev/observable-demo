@@ -9,7 +9,14 @@ export function HomePage() {
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
       <span>
-        <a href="./bar-charts">Bar Charts</a>
+        <ul>
+          <li>
+            <a href="./bar-charts">Bar Charts</a>
+          </li>
+          <li>
+            <a href="./fancy-layout">Fancy Layout</a>
+          </li>
+        </ul>
       </span>
     </>
   );
