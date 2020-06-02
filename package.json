@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@observablehq/how-to-embed-a-notebook-in-a-react-app": "https://api.observablehq.com/@observablehq/how-to-embed-a-notebook-in-a-react-app.tgz?v=3",
     "@observablehq/runtime": "4.7.0",
     "@reduxjs/toolkit": "1.3.2",
     "@testing-library/jest-dom": "5.1.1",
