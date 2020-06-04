@@ -19,6 +19,7 @@ import { FancyLayout } from './containers/FancyLayout';
 import { ThreeDee } from './containers/ThreeDee';
 import { GpuBoids } from './containers/GpuBoids';
 import { MapBox } from './containers/MapBox';
+import { SharedRuntime } from './containers/SharedRuntime';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 
 export function App() {
@@ -39,6 +40,7 @@ export function App() {
         <Route exact path="/three-dee" component={ThreeDee} />
         <Route exact path="/gpu-boids" component={GpuBoids} />
         <Route exact path="/mapbox-video" component={MapBox} />
+        <Route exact path="/shared-runtime" component={SharedRuntime} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

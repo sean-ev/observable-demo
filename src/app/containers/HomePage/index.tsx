@@ -25,6 +25,9 @@ export function HomePage() {
           <li>
             <a href="./fancy-layout">Fancy Layout</a>
           </li>
+          <li>
+            <a href="./shared-runtime">Shared Runtime</a>
+          </li>
         </ul>
       </span>
     </>
