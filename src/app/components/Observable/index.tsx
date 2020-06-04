@@ -1,18 +1,4 @@
-// /**
-//  *
-//  * Observable
-//  *
-//  */
-// import React from 'react';
-
-// interface Props {}
-
-// export function Observable(props: Props) {
-//   return <div></div>;
-// }
-
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import { DOMNode } from './render-dom-node';
 import { RuntimeProvider, NotebookProvider, useValue } from './runtime';
@@ -46,11 +32,3 @@ function Hero() {
 function Graphic() {
   return <DOMNode>{useValue('graphic')}</DOMNode>;
 }
-
-// const rootElement = document.getElementById('root')
-// ReactDOM.render(
-//   <RuntimeProvider>
-//     <App />
-//   </RuntimeProvider>,
-//   rootElement,
-// )

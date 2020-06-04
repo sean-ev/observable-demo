@@ -20,6 +20,7 @@ import { ThreeDee } from './containers/ThreeDee';
 import { GpuBoids } from './containers/GpuBoids';
 import { MapBox } from './containers/MapBox';
 import { SharedRuntime } from './containers/SharedRuntime';
+
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 
 export function App() {

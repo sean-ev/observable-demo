@@ -18,11 +18,17 @@ export function SharedRuntime(props: Props) {
       </Helmet>
       <div className="App">
         <RuntimeProvider>
-          <NotebookProvider url="https://api.observablehq.com/@tmcw/hello-world.js?v=3">
-            <Hero />
+          <h3>Chart.js Example</h3>
+          <NotebookProvider url="https://api.observablehq.com/d/0bbc8e279a8f6259.js?v=3">
+            <Visual cellName="visual" />
           </NotebookProvider>
-          <NotebookProvider url="https://api.observablehq.com/@observablehq/downloading-and-embedding-notebooks.js?v=3">
-            <Graphic />
+          <h3>Google Gant Chart</h3>
+          <NotebookProvider url="https://api.observablehq.com/@elephantventures/untitled.js?v=3">
+            <Visual cellName="chart" />
+          </NotebookProvider>
+          <h3>D3 Timeslider</h3>
+          <NotebookProvider url="https://api.observablehq.com/@mbostock/hello-d3-simple-slider.js?v=3">
+            <Visual cellName="viewof time" />
           </NotebookProvider>
         </RuntimeProvider>
       </div>
@@ -30,15 +36,10 @@ export function SharedRuntime(props: Props) {
   );
 }
 
-function Hero() {
+function Visual(props: any) {
   return (
     <>
-      <DOMNode>{useValue('hello')}</DOMNode>
-      <h2>Start editing to see some magic happen!</h2>
+      <DOMNode>{useValue(props.cellName)}</DOMNode>
     </>
   );
-}
-
-function Graphic() {
-  return <DOMNode>{useValue('graphic')}</DOMNode>;
 }

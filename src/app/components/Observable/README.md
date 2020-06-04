@@ -1,0 +1,1 @@
+- This code was adapted from https://codesandbox.io/s/pyn9959007?file=/src/types.d.ts:0-1958

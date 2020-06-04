@@ -1,5 +1,5 @@
 ///<reference path="./types.d.ts" />
-import React, { useRef, useContext, useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Runtime, Module, Define } from '@observablehq/runtime';
 import {
   Optional,
